@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Hellish pizzeria</title>
+  <link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/DelaGothicOne-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container header__container">
+    <a href="/" class="logo">
+      <img loading="lazy" src="img/logo.svg" class="image" width="70" height="65" alt="logo">
+    </a>
+    <nav class="nav" title="menu" data-menu>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="about.html" class="nav__link" data-scroll>О пиццерии</a></li>
+        <li class="nav__item"><a href="zones.html" class="nav__link" data-scroll>Зоны</a></li>
+        <li class="nav__item"><a href="shop.html" class="nav__link" data-scroll>Магазин</a></li>
+        <li class="nav__item"><a href="contacts.html" class="nav__link" data-scroll>Контакты</a></li>
+        <li class="nav__item"><a href="basket.html" class="nav__link" data-scroll>Корзина</a></li>
+      </ul>
+    </nav>
+   <button class="burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+     <span class="burger__line"></span>
+     <span class="burger__line"></span>
+     <span class="burger__line"></span>
+   </button>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="hero-zones">
+  <div class="container hero-zones__container">
+    <div class="hero-zones__content">
+      <h2 class="hero-zones__title">Зоны</h2>
+      <span class="hero-zones__text">
+        На втором этаже пиццерии расположены зоны с разными видами
+        пиццы: ананасовая, мясная, острая и сырная. Ананасовая и острая
+        пицца делается из выращенных своими руками в теплицах ананасов
+        и перцев, что делает пиццу особенно вкусной. Мясная пицца
+        делается из мяса коров и цыплят, а сырная из свежего молока.
+      </span>
+    </div>
+    <div class="hero-zones__image">
+      <picture>
+        <source srcset="img/zones.avif" type="image/avif">
+        <source srcset="img/zones.webp" type="image/webp">
+        <img loading="lazy" src="img/zones.jpg" class="image" width="880" height="495" alt="zones">
+      </picture>
+    </div>
+  </div>
+</section>
+
+      <section class="zones">
+  <div class="container">
+    <div class="zones__heading">
+      Успей занять жаркие места
+    </div>
+  </div>
+  <div class="zones__wrapper">
+    <div class="swiper zones__content">
+      <div class="swiper-wrapper">
+         <div class="swiper-slide">
+          <div class="zones__item">
+            <picture>
+              <source srcset="img/pepper.avif" type="image/avif">
+              <source srcset="img/pepper.webp" type="image/webp">
+              <img loading="lazy" src="img/pepper.jpg" class="image" width="580" height="452" alt="Pepper">
+            </picture>
+            <div class="zones__title">Острая зона</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="zones__item">
+            <picture>
+              <source srcset="img/meat.avif" type="image/avif">
+              <source srcset="img/meat.webp" type="image/webp">
+              <img loading="lazy" src="img/meat.jpg" class="image" width="580" height="452" alt="Meat">
+            </picture>
+            <div class="zones__title">Мясная зона</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="zones__item">
+            <picture>
+              <source srcset="img/cheese.avif" type="image/avif">
+              <source srcset="img/cheese.webp" type="image/webp">
+              <img loading="lazy" src="img/cheese.jpg" class="image" width="580" height="452" alt="Cheese">
+            </picture>
+            <div class="zones__title">Сырная зона</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="zones__item">
+            <picture>
+              <source srcset="img/pineapple.avif" type="image/avif">
+              <source srcset="img/pineapple.webp" type="image/webp">
+              <img loading="lazy" src="img/pineapple.jpg" class="image" width="580" height="452" alt="Pineapple">
+            </picture>
+            <div class="zones__title">Ананасовая зона</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="zones__btns">
+      <button class="btn-reset zones__btn--prev"
+      aria-label="Перейти к предыдущему слайду"></button>
+      <button class="btn-reset zones__btn--next"
+      aria-label="Перейти к следующему слайду"></button>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="container-fluid footer__container">
+    <nav class="footer-nav" title="menu footer">
+      <ul class="footer-nav__list">
+        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Адская пиццерия «Девятый круг»</a></li>
+        <li class="footer-nav__item"><a href="page-404.html" class="footer-nav__link">Тех. поддержка</a></li>
+        <li class="footer-nav__item"><a href="page-404.html" class="footer-nav__link">Сотрудничество</a></li>
+        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Анастасия Боязникова</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+  </div>
+</body>
+</html>

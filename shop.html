@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Hellish pizzeria</title>
+  <link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/DelaGothicOne-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container header__container">
+    <a href="/" class="logo">
+      <img loading="lazy" src="img/logo.svg" class="image" width="70" height="65" alt="logo">
+    </a>
+    <nav class="nav" title="menu" data-menu>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="about.html" class="nav__link" data-scroll>О пиццерии</a></li>
+        <li class="nav__item"><a href="zones.html" class="nav__link" data-scroll>Зоны</a></li>
+        <li class="nav__item"><a href="shop.html" class="nav__link" data-scroll>Магазин</a></li>
+        <li class="nav__item"><a href="contacts.html" class="nav__link" data-scroll>Контакты</a></li>
+        <li class="nav__item"><a href="basket.html" class="nav__link" data-scroll>Корзина</a></li>
+      </ul>
+    </nav>
+   <button class="burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+     <span class="burger__line"></span>
+     <span class="burger__line"></span>
+     <span class="burger__line"></span>
+   </button>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="products">
+  <div class="container products__container">
+    <div class="products__title">
+      Адские сувениры по горячим ценам
+    </div>
+    <div class="products-content grid-container">
+      <ul class="product-grid">
+        <li class="product-grid__item">
+          <article class="product">
+            <div class="product__image">
+              <picture>
+                <source srcset="img/t-shirt.avif" type="image/avif">
+                <source srcset="img/t-shirt.webp" type="image/webp">
+                <img loading="lazy" src="img/t-shirt.jpg" class="image" width="579" height="579" alt="t-shirt">
+              </picture>
+            </div>
+            <div class="product__title">Футболка</div>
+            <div class="product__price">1500 руб.</div>
+            <button class="btn">Добавить в корзину</button>
+          </article>
+        </li>
+        <li class="product-grid__item">
+          <article class="product">
+            <div class="product__image">
+              <picture>
+                <source srcset="img/notepad.avif" type="image/avif">
+                <source srcset="img/notepad.webp" type="image/webp">
+                <img loading="lazy" src="img/notepad.jpg" class="image" width="579" height="579" alt="notepad">
+              </picture>
+            </div>
+            <div class="product__title">Блокнот</div>
+            <div class="product__price">500 руб.</div>
+            <button class="btn">Добавить в корзину</button>
+          </article>
+        </li>
+        <li class="product-grid__item">
+          <article class="product">
+            <div class="product__image">
+              <picture>
+                <source srcset="img/soap.avif" type="image/avif">
+                <source srcset="img/soap.webp" type="image/webp">
+                <img loading="lazy" src="img/soap.jpg" class="image" width="579" height="579" alt="soap">
+              </picture>
+            </div>
+            <div class="product__title">Мыло</div>
+            <div class="product__price">300 руб.</div>
+            <button class="btn">Добавить в корзину</button>
+          </article>
+        </li>
+        <li class="product-grid__item">
+          <article class="product">
+            <div class="product__image">
+              <picture>
+                <source srcset="img/book.avif" type="image/avif">
+                <source srcset="img/book.webp" type="image/webp">
+                <img loading="lazy" src="img/book.jpg" class="image" width="579" height="579" alt="book">
+              </picture>
+            </div>
+            <div class="product__title">Книга</div>
+            <div class="product__price">1000 руб.</div>
+            <button class="btn">Добавить в корзину</button>
+          </article>
+        </li>
+        <li class="product-grid__item">
+          <article class="product">
+            <div class="product__image">
+              <picture>
+                <source srcset="img/poster-sin.avif" type="image/avif">
+                <source srcset="img/poster-sin.webp" type="image/webp">
+                <img loading="lazy" src="img/poster-sin.jpg" class="image" width="579" height="579" alt="sin">
+              </picture>
+            </div>
+            <div class="product__title">Плакат из серии «Смертные грехи»</div>
+            <div class="product__price">100 руб.</div>
+            <button class="btn">Добавить в корзину</button>
+          </article>
+        </li>
+        <li class="product-grid__item">
+          <article class="product">
+            <div class="product__image">
+              <picture>
+                <source srcset="img/poster-events.avif" type="image/avif">
+                <source srcset="img/poster-events.webp" type="image/webp">
+                <img loading="lazy" src="img/poster-events.jpg" class="image" width="579" height="579" alt="events">
+              </picture>
+            </div>
+            <div class="product__title">Плакат из серии «Адская вечеринка»</div>
+            <div class="product__price">100 руб.</div>
+            <button class="btn">Добавить в корзину</button>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+  <div class="container-fluid footer__container">
+    <nav class="footer-nav" title="menu footer">
+      <ul class="footer-nav__list">
+        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Адская пиццерия «Девятый круг»</a></li>
+        <li class="footer-nav__item"><a href="page-404.html" class="footer-nav__link">Тех. поддержка</a></li>
+        <li class="footer-nav__item"><a href="page-404.html" class="footer-nav__link">Сотрудничество</a></li>
+        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Анастасия Боязникова</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+  </div>
+</body>
+</html>

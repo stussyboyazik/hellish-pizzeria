@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Hellish pizzeria</title>
+  <link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/DelaGothicOne-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container header__container">
+    <a href="/" class="logo">
+      <img loading="lazy" src="img/logo.svg" class="image" width="70" height="65" alt="logo">
+    </a>
+    <nav class="nav" title="menu" data-menu>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="about.html" class="nav__link" data-scroll>О пиццерии</a></li>
+        <li class="nav__item"><a href="zones.html" class="nav__link" data-scroll>Зоны</a></li>
+        <li class="nav__item"><a href="shop.html" class="nav__link" data-scroll>Магазин</a></li>
+        <li class="nav__item"><a href="contacts.html" class="nav__link" data-scroll>Контакты</a></li>
+        <li class="nav__item"><a href="basket.html" class="nav__link" data-scroll>Корзина</a></li>
+      </ul>
+    </nav>
+   <button class="burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+     <span class="burger__line"></span>
+     <span class="burger__line"></span>
+     <span class="burger__line"></span>
+   </button>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="basket">
+        <div class="container basket__container">
+          <div class="basket__products">
+            <h2>Корзина</h2>
+            <div class="product">
+              <picture>
+                <source srcset="img/t-shirt-small.avif" type="image/avif">
+                <source srcset="img/t-shirt-small.webp" type="image/webp">
+                <img loading="lazy" src="img/t-shirt-small.jpg." class="image" width="100" height="100" alt="t-shirt">
+              </picture>
+              <div class="product__name">Футболка</div>
+              <div class="product__number">
+                <input type="number" min="0" max="10" value="1">
+              </div>
+              <div class="product__price">1500 руб.</div>
+            </div>
+            <div class="product">
+              <picture>
+                <source srcset="img/notepad-small.avif" type="image/avif">
+                <source srcset="img/notepad-small.webp" type="image/webp">
+                <img loading="lazy" src="img/notepad-small.jpg" class="image" width="100" height="100" alt="notepad">
+              </picture>
+              <div class="product__name">Блокнот</div>
+              <div class="product__number">
+                <input type="number" min="0" max="10" value="1">
+              </div>
+              <div class="product__price">500 руб.</div>
+            </div>
+            <div class="product">
+              <picture>
+                <source srcset="img/soap-small.avif" type="image/avif">
+                <source srcset="img/soap-small.webp" type="image/webp">
+                <img loading="lazy" src="img/soap-small.jpg" class="image" width="100" height="100" alt="soap">
+              </picture>
+              <div class="product__name">Мыло</div>
+              <div class="product__number">
+                <input type="number" min="0" max="10" value="1">
+              </div>
+              <div class="product__price">300 руб.</div>
+            </div>
+            <div class="product">
+              <picture>
+                <source srcset="img/book-small.avif" type="image/avif">
+                <source srcset="img/book-small.webp" type="image/webp">
+                <img loading="lazy" src="img/book-small.jpg" class="image" width="100" height="100" alt="book">
+              </picture>
+              <div class="product__name">Книга</div>
+              <div class="product__number">
+                <input type="number" min="0" max="10" value="1">
+              </div>
+              <div class="product__price">1000 руб.</div>
+            </div>
+            <div class="product">
+              <picture>
+                <source srcset="img/poster-sin-small.avif" type="image/avif">
+                <source srcset="img/poster-sin-small.webp" type="image/webp">
+                <img loading="lazy" src="img/poster-sin-small.jpg" class="image" width="100" height="100" alt="poster-sin">
+              </picture>
+              <div class="product__name">Плакат</div>
+              <div class="product__number">
+                <input type="number" min="0" max="10" value="1">
+              </div>
+              <div class="product__price">100 руб.</div>
+            </div>
+            <div class="product">
+              <picture>
+                <source srcset="img/poster-events-small.avif" type="image/avif">
+                <source srcset="img/poster-events-small.webp" type="image/webp">
+                <img loading="lazy" src="img/poster-events-small.jpg" class="image" width="100" height="100" alt="poster-events">
+              </picture>
+              <div class="product__name">Плакат</div>
+              <div class="product__number">
+                <input type="number" min="0" max="10" value="1">
+              </div>
+              <div class="product__price">100 руб.</div>
+            </div>
+            <div class="basket__total">
+              <span>Общая стоимость:</span>
+              <span>3500 руб.</span>
+            </div>
+          </div>
+          <div class="basket__ordering">
+            <h2>Оформление заказа</h2>
+            <form action="">
+              <input class="field__big" type="text" value="Имя">
+              <input class="field__big" type="text" value="Фамилия">
+              <input class="field__small" type="text" value="Улица, дом">
+              <input class="field__small" type="text" value="Квартира">
+              <input class="field__big" type="text" value="Номер карты">
+            </form>
+            <button class="btn">Оплатить</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+  <div class="container-fluid footer__container">
+    <nav class="footer-nav" title="menu footer">
+      <ul class="footer-nav__list">
+        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Адская пиццерия «Девятый круг»</a></li>
+        <li class="footer-nav__item"><a href="page-404.html" class="footer-nav__link">Тех. поддержка</a></li>
+        <li class="footer-nav__item"><a href="page-404.html" class="footer-nav__link">Сотрудничество</a></li>
+        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Анастасия Боязникова</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+  </div>
+</body>
+</html>
